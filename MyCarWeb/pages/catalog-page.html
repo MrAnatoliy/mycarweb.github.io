@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles/catalog-page-style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="header">
+    <a class="logo-text" href="main-page.html">MY CAR</a>
+    <div class="nav">
+        <div data-type="catalog" class="nav-button">
+            <a href="catalog-page.html" class="nav-text">catalog</a>
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+        </div>
+        <div data-type="selection"class="nav-button">
+            <a href="selection-page.html" class="nav-text">contacts</a>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+        </div>
+        <div data-type="calculator"class="nav-button">
+            <a href="calculator-page.html" class="nav-text">calculator</a>
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><path d="M19,3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.1,3,19,3z M13.03,7.06L14.09,6l1.41,1.41 L16.91,6l1.06,1.06l-1.41,1.41l1.41,1.41l-1.06,1.06L15.5,9.54l-1.41,1.41l-1.06-1.06l1.41-1.41L13.03,7.06z M6.25,7.72h5v1.5h-5 V7.72z M11.5,16h-2v2H8v-2H6v-1.5h2v-2h1.5v2h2V16z M18,17.25h-5v-1.5h5V17.25z M18,14.75h-5v-1.5h5V14.75z"/></g></svg>
+        </div>
+        <div data-type="account"class="nav-button">
+            <a href="account-page.html" class="nav-text">account</a>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+    </div>
+</div>
+<div class="hero">
+    <div class="settings">
+        <div class="settings-div search">
+            <input placeholder="Search" class="settings-input search-input" type="text" name="search" id="si1">
+            <svg class="settings-svg" xmlns="http://www.w3.org/2000/svg" height="29" viewBox="0 0 48 48" width="29" fill="#000000"><path d="M39.8 41.95 26.65 28.8q-1.5 1.3-3.5 2.025-2 .725-4.25.725-5.4 0-9.15-3.75T6 18.75q0-5.3 3.75-9.05 3.75-3.75 9.1-3.75 5.3 0 9.025 3.75 3.725 3.75 3.725 9.05 0 2.15-.7 4.15-.7 2-2.1 3.75L42 39.75Zm-20.95-13.4q4.05 0 6.9-2.875Q28.6 22.8 28.6 18.75t-2.85-6.925Q22.9 8.95 18.85 8.95q-4.1 0-6.975 2.875T9 18.75q0 4.05 2.875 6.925t6.975 2.875Z"/></svg>
+        </div>
+        <div class="settings-div brand">
+            <input placeholder="Brand" class="settings-input" type="text" name="brand" list="brandname" />
+            <datalist id="brandname">
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Toyota">Toyota</option>
+                <option value="BMW">BMW</option>
+                <option value="Ford">Ford</option>
+                <option value="Honda">Honda</option>
+                <option value="Audi">Audi</option>
+                <option value="Subaru">Subaru</option>
+            </datalist>
+            <svg class="settings-svg" xmlns="http://www.w3.org/2000/svg" height="29" width="29" viewBox="0 0 303.85 262.9" fill="#000000"><title>Mitsubishi Group logo - Brandlogos.net</title><path d="M333.36,515.45H232.07l50.64-87.63H384Zm101.28,0H535.93l-50.64-87.63H384Zm0-175.27L384,252.55l-50.64,87.63L384,427.82Z" transform="translate(-232.07 -252.55)" /></svg>
+        </div>
+        <div class="settings-div transmission">
+            <input placeholder="Tranmission" class="settings-input" type="text" name="transmission" list="transmission" />
+            <datalist id="transmission">
+                <option value="Manual">Manual</option>
+                <option value="Automatic">Automatic</option>
+            </datalist>
+            <svg class="settings-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" height="29" width="29"><path d="m19.4 44-1-6.3q-.95-.35-2-.95t-1.85-1.25l-5.9 2.7L4 30l5.4-3.95q-.1-.45-.125-1.025Q9.25 24.45 9.25 24q0-.45.025-1.025T9.4 21.95L4 18l4.65-8.2 5.9 2.7q.8-.65 1.85-1.25t2-.9l1-6.35h9.2l1 6.3q.95.35 2.025.925Q32.7 11.8 33.45 12.5l5.9-2.7L44 18l-5.4 3.85q.1.5.125 1.075.025.575.025 1.075t-.025 1.05q-.025.55-.125 1.05L44 30l-4.65 8.2-5.9-2.7q-.8.65-1.825 1.275-1.025.625-2.025.925l-1 6.3ZM24 30.5q2.7 0 4.6-1.9 1.9-1.9 1.9-4.6 0-2.7-1.9-4.6-1.9-1.9-4.6-1.9-2.7 0-4.6 1.9-1.9 1.9-1.9 4.6 0 2.7 1.9 4.6 1.9 1.9 4.6 1.9Zm0-3q-1.45 0-2.475-1.025Q20.5 25.45 20.5 24q0-1.45 1.025-2.475Q22.55 20.5 24 20.5q1.45 0 2.475 1.025Q27.5 22.55 27.5 24q0 1.45-1.025 2.475Q25.45 27.5 24 27.5Zm0-3.5Zm-2.2 17h4.4l.7-5.6q1.65-.4 3.125-1.25T32.7 32.1l5.3 2.3 2-3.6-4.7-3.45q.2-.85.325-1.675.125-.825.125-1.675 0-.85-.1-1.675-.1-.825-.35-1.675L40 17.2l-2-3.6-5.3 2.3q-1.15-1.3-2.6-2.175-1.45-.875-3.2-1.125L26.2 7h-4.4l-.7 5.6q-1.7.35-3.175 1.2-1.475.85-2.625 2.1L10 13.6l-2 3.6 4.7 3.45q-.2.85-.325 1.675-.125.825-.125 1.675 0 .85.125 1.675.125.825.325 1.675L8 30.8l2 3.6 5.3-2.3q1.2 1.2 2.675 2.05Q19.45 35 21.1 35.4Z"/></svg>
+        </div>
+        <div class="settings-div engine">
+            <input placeholder="Engine" class="settings-input" type="text" name="engine" list="engine" />
+            <datalist id="engine">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+            </datalist>
+            <svg class="settings-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29px" height="29px" viewBox="0 0 89.938 89.938"><g>
+                <g>
+                    <path d="M88.461,37.406h-1.969c-0.814,0-1.479,0.663-1.479,1.477v25.655c0,0.814,0.662,1.479,1.479,1.479h1.969
+			c0.813,0,1.477-0.664,1.477-1.479V38.882C89.938,38.069,89.275,37.406,88.461,37.406z"/>
+                    <path d="M1.477,36.157C0.664,36.157,0,36.819,0,37.634v28.164c0,0.813,0.663,1.478,1.477,1.478h4.015
+			c0.814,0,1.477-0.663,1.477-1.478V37.642c0-0.813-0.662-1.477-1.477-1.477H1.477V36.157z"/>
+                    <path d="M57.617,71.781c3.294-1.278,6.568-2.595,9.855-3.872c0.293-0.113,0.634-0.152,0.947-0.16
+			c2.432-0.01,4.864-0.01,7.288-0.01c2.519,0,4.138-1.62,4.138-4.166v-8.331c0-0.597,0.481-1.069,1.069-1.069l1.05-0.027
+			c0.834,0,0.883-0.323,0.909-0.9l0.021-4.837c0-0.481-0.389-0.871-0.872-0.871h-1.126c-0.598,0-1.079-0.483-1.079-1.08
+			l0.036-10.101c0.029-1.496-0.576-2.527-1.723-3.352c-1.969-1.42-7.771-5.538-8.719-6.144c-0.652-0.427-1.363-0.597-2.158-0.587
+			l-10.007-0.01c-0.853,0-1.543-0.691-1.543-1.543v-0.312c0-0.861,0.7-1.562,1.562-1.562h9.07c0.86,0,1.562-0.7,1.562-1.562v-1.809
+			c0-0.861-0.701-1.562-1.562-1.562H36.222c-0.862,0-1.562,0.7-1.562,1.562v1.809c0,0.861,0.7,1.562,1.562,1.562h9.816
+			c0.862,0,1.563,0.701,1.563,1.562v0.36c0,0.852-0.691,1.552-1.555,1.542l-9.911-0.037c-1.895-0.057-3.446,0.587-4.886,1.628
+			c-2.102,1.524-4.165,3.096-6.229,4.668c-0.521,0.397-1.174,0.615-1.827,0.605c-1.987-0.02-3.976-0.02-5.964,0
+			c-2.471,0.019-4.07,1.609-4.09,4.09l0.028,6.901c0,0.586-0.474,1.069-1.07,1.069h-0.927c-1.127,0-2.036,0.909-2.036,2.036v10.935
+			c0,1.126,0.909,2.034,2.036,2.034h0.899c0.587,0,1.069,0.475,1.069,1.07c0,1.57-0.01,4.496,0,6.189
+			c0,1.573-0.028,4.526,2.85,4.526h40.37C56.784,72.027,57.229,71.942,57.617,71.781z"/>
+                </g>
+            </g></svg>
+        </div>
+
+        <div class="settings-range-div mileage">
+            <div class="settings-info">
+                <p class="settings-text mileage-text">Mileage</p>
+                <input type="text" name="mileage" id="mi1" class="settings-range-input mileage-input">
+            </div>
+            <input class="settings-range" type="range" id="mileage" name="mileage" min="0" max="100000">
+            <div class="settings-slider">
+                <p>0 km</p>
+                <p>100.000 km</p>
+            </div>
+        </div>
+        <div class="settings-range-div cost">
+            <div class="settings-info">
+                <p class="settings-text cost-text">Cost</p>
+                <input type="text" name="cost" id="ci1" class="settings-range-input cost-input">
+            </div>
+            <input class="settings-range" type="range" id="cost" name="cost" min="0" max="5000000">
+            <div class="settings-slider">
+                <p>0 rub</p>
+                <p>5.000.000 rub</p>
+            </div>
+        </div>
+        <div class="show-result-button">
+            <p class="show-result-button-text">SHOW RESULT</p>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img class="car-photo" src="assets/images/car_photos/placeholder.png" alt="placeholder">
+            <div class="car-content">
+                <p class="car-name">Car name</p>
+                <p class="car-mileage">xxx.xxx km</p>
+                <p class="car-year">year</p>
+                <p class="car-info">x.xL/xxxhp/fuel</p>
+                <p class="car-drive">drive</p>
+                <p class="car-transmission">transmission</p>
+                <p class="car-location">location</p>
+                <p class="car-cost">x.xxx.xxx ₽</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/catalog-settings-script.js"></script>
+    <script src="scripts/catalog-scroll-card-hide.js"></script>
+</div>
+</body>
+</html>
